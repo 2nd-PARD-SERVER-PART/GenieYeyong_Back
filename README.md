@@ -7,7 +7,7 @@
 
 ---
 
-### 기술 스택
+### 🖥️ 기술 스택
   <div style={display:flex}>
     <img src="https://img.shields.io/badge/Springboot-6DB33F?style=for-the-badge&logo=html5&logoColor=white">
     <img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
@@ -16,11 +16,11 @@
 
 ---
 
-### API 명세서: [바로가기](https://young-stallion-a88.notion.site/7da8fcb063114c4081d21d333b400bad?pvs=4)
+### 🧾 API 명세서: [바로가기](https://young-stallion-a88.notion.site/7da8fcb063114c4081d21d333b400bad?pvs=4)
 
 --- 
 
-### 🧾 board
+### 📋 board
 <details>
 <summary>wish</summary>
 <div markdown="1">
