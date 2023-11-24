@@ -1,6 +1,36 @@
 # GenieYeyong_Back
-## API 명세서 - [Swagger Page](http://172.18.140.44:8080/)
-### 1. 다짐하기
+<div align="center"> 
+
+</div>
+
+### 기술 스택
+  <div style={display:flex}>
+    <img src="https://img.shields.io/badge/Springboot-6DB33F?style=for-the-badge&logo=html5&logoColor=white">
+    <img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
+    <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
+  </div>
+
+### API 명세서: [Swagger](http://172.18.140.44:8080)
+
+### 🧾 board
+<details>
+<summary>wish</summary>
+<div markdown="1">
+
+```
+nickname text
+contents varchar(255)
+type varchar(255)
+password varchar(255)
+```
+</div>
+</details>
+
+### ⭐️ 주요기능
+<details>
+<summary> 1. 다짐하기</summary>
+<div markdown="2">
+
 #### RequestBody
   
 ```
@@ -11,6 +41,10 @@
   "password": "string"
 }
 ```
+다짐을 적는 페이지입니다.<br/>
+nickname: 원하는 닉네임으로 올리기<br/>
+contents: 원하는 다짐을 적기
+
 
 #### ResponseBody
 ```
@@ -31,7 +65,13 @@
 ```
 
 
-### 2. 다짐 둘러보기
+</div>
+</details>
+
+<details>
+<summary>2. 다짐 둘러보기</summary>
+<div markdown="3">
+  
 #### ResponseBody
 ```
 {
@@ -50,7 +90,14 @@
 }
 ```
 
-### 3. 학부별 다짐 둘러보기
+</div>
+</details>
+
+<details>
+<summary>3. 학부별 다짐 둘러보기</summary>
+<div markdown="4">
+
+
 #### PathVariable
 ```
 type: String
@@ -75,7 +122,14 @@ type: String
   "total": int
 }
 ```
-### 4. 다짐 지우기
+
+</div>
+</details>
+
+<details>
+<summary>4. 다짐 지우기</summary>
+<div markdown="5">
+
 #### PathVariable
 ```
 id: int
@@ -95,3 +149,7 @@ id: int
   "total": 0
 }
 ```
+
+</div>
+</details>
+
