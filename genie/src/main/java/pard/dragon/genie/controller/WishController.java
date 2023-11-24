@@ -44,5 +44,4 @@ public class WishController {
         return result;
     }
 
-
 }

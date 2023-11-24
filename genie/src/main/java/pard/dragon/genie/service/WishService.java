@@ -74,4 +74,6 @@ public class WishService {
         }
     }
 
+    // 삭제를 누를 떄, 페이지에 대한 id가 맨 뒤에 endpoint로 붙고, request를 password로
+
 }
