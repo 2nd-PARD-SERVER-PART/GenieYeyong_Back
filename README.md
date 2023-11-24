@@ -1,7 +1,11 @@
 # GenieYeyong_Back
-<div align="center"> 
 
+<div align="center"> 
+ <img src="./yong.png"> <br/> <br/>
+  🙏🏽새해 맞이 학부 별 다짐을 적는 웹 페이지🙏🏽
 </div>
+
+---
 
 ### 기술 스택
   <div style={display:flex}>
@@ -10,7 +14,11 @@
     <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
   </div>
 
+---
+
 ### API 명세서: [Swagger](http://172.18.140.44:8080)
+
+--- 
 
 ### 🧾 board
 <details>
@@ -25,6 +33,8 @@ password varchar(255)
 ```
 </div>
 </details>
+
+---
 
 ### ⭐️ 주요기능
 <details>
@@ -44,6 +54,8 @@ password varchar(255)
 다짐을 적는 페이지입니다.<br/>
 nickname: 원하는 닉네임으로 올리기<br/>
 contents: 원하는 다짐을 적기
+type: 해당 학부 선택
+password: 해당 다짐에 부여하는 나만의 비밀번호
 
 
 #### ResponseBody
