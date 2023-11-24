@@ -7,9 +7,6 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class WishDto {
-    private String nickname;
-    private String contents;
-    private String type;
+public class WishPasswordDto {
     private String password;
 }

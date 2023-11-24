@@ -24,6 +24,8 @@ public class WishService {
             return ResponseDto.setFailed("닉네임이 비어있습니다.");
         if(wish.getContents().isEmpty())
             return ResponseDto.setFailed("소원 내용이 비어있습니다.");
+        if(wish.getPassword().isEmpty())
+            return ResponseDto.setFailed("비밀번호를 입력하세요.");
         wishRepository.save(wish);
         return ResponseDto.setSuccess("소원이 정상적으로 추가되었습니다", wish);
     }
@@ -55,4 +57,21 @@ public class WishService {
             return ResponseDto.setFailed("DB 오류");
         }
     }
+
+    public ResponseDto<?> deleteWish(String password, Integer id) {
+        try {
+            if (wishRepository.findById(id).get().getPassword().equals(password)) {
+                wishRepository.deleteById(id);
+                return ResponseDto.setSuccess("소원이 삭제되었습니다.", null);
+
+            } else {
+                return ResponseDto.setFailed("비밀번호가 맞지 않음");
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            return ResponseDto.setFailed("DB 오류: " + e.getMessage());
+        }
+    }
+
 }

@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import pard.dragon.genie.dto.ResponseDto;
 import pard.dragon.genie.dto.WishDto;
+import pard.dragon.genie.dto.WishPasswordDto;
 import pard.dragon.genie.entity.WishEntity;
 import pard.dragon.genie.service.WishService;
 
@@ -34,6 +35,12 @@ public class WishController {
     @GetMapping("/findOneWish/{type}")
     public ResponseDto<List<WishEntity>> findOneWish(@PathVariable String type){
         ResponseDto<List<WishEntity>> result = wishService.findOneWish(type);
+        return result;
+    }
+
+    @DeleteMapping("/deleteWish/{id}")
+    public ResponseDto<?> deleteWish(@RequestBody WishPasswordDto wishPasswordDto,@PathVariable Integer id){
+        ResponseDto<?> result = wishService.deleteWish(wishPasswordDto.getPassword(),id);
         return result;
     }
 

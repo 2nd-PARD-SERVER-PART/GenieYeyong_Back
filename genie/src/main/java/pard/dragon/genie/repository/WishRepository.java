@@ -6,5 +6,6 @@ import pard.dragon.genie.entity.WishEntity;
 import java.util.List;
 
 public interface WishRepository extends JpaRepository<WishEntity, Integer> {
-    List<WishEntity> findByType(String tupe);
+    List<WishEntity> findByType(String type);
+    WishEntity findByPassword(String password);
 }

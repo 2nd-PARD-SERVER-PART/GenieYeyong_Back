@@ -19,11 +19,13 @@ public class WishEntity {
     private String nickname;
     private String contents;
     private String type;
+    private String password;
 
     public WishEntity(WishDto dto){
         this.nickname = dto.getNickname();
         this.contents = dto.getContents();
         this.type = dto.getType();
+        this.password = dto.getPassword();
     }
 
 }
