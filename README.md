@@ -16,7 +16,7 @@
 
 ---
 
-### API 명세서: [Swagger](http://172.18.140.44:8080)
+### API 명세서: [바로가기](https://young-stallion-a88.notion.site/7da8fcb063114c4081d21d333b400bad?pvs=4)
 
 --- 
 
@@ -38,7 +38,7 @@ password varchar(255)
 
 ### ⭐️ 주요기능
 <details>
-<summary> 1. 다짐하기</summary>
+<summary> 1. 다짐하기 : /wish2024/wishWrite</summary>
 <div markdown="2">
 
 #### RequestBody
@@ -81,7 +81,7 @@ password: 해당 다짐에 부여하는 나만의 비밀번호
 </details>
 
 <details>
-<summary>2. 다짐 둘러보기</summary>
+<summary>2. 다짐 둘러보기: /wish2024/findAll</summary>
 <div markdown="3">
   
 #### ResponseBody
@@ -106,7 +106,7 @@ password: 해당 다짐에 부여하는 나만의 비밀번호
 </details>
 
 <details>
-<summary>3. 학부별 다짐 둘러보기</summary>
+<summary>3. 학부별 다짐 둘러보기: /wish2024/findTypeWish/{type}</summary>
 <div markdown="4">
 
 
@@ -139,7 +139,7 @@ type: String
 </details>
 
 <details>
-<summary>4. 다짐 지우기</summary>
+<summary>4. 다짐 지우기: /wish2024/deleteWish/{id}</summary>
 <div markdown="5">
 
 #### PathVariable
