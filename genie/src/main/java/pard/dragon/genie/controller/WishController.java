@@ -32,7 +32,7 @@ public class WishController {
         return result;
     }
 
-    @GetMapping("/findOneWish/{type}")
+    @GetMapping("/findTypeWish/{type}")
     public ResponseDto<List<WishEntity>> findOneWish(@PathVariable String type){
         ResponseDto<List<WishEntity>> result = wishService.findOneWish(type);
         return result;
