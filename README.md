@@ -1,7 +1,7 @@
 # GenieYeyong_Back
 
 <div align="center"> 
- <img src="./yong.png"> <br/> <br/>
+ <img src="/yong.png"> <br/> <br/>
   🙏🏽새해 맞이 학부 별 다짐을 적는 웹 페이지🙏🏽
 </div>
 
@@ -31,7 +31,7 @@ contents varchar(255)
 type varchar(255)
 password varchar(255)
 ```
-<img src="./wishTalbe.png">
+<img src = "/wishTable.png">
 
 </div>
 </details>
