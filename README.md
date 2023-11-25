@@ -31,6 +31,8 @@ contents varchar(255)
 type varchar(255)
 password varchar(255)
 ```
+<img src="./wishTalbe.png">
+
 </div>
 </details>
 
